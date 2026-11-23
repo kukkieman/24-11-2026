@@ -12,7 +12,7 @@
 <style>
   .gif-references{display:flex;justify-content:center;align-items:center;gap:0;padding:0;margin:1.5rem auto 0;width:min(600px,100%)}
   .gif-references img.sticker.mini{flex:1 1 0;width:33.333%;max-width:33.333%;height:clamp(110px,22vw,180px);margin:0;object-fit:contain;filter:none}
-  #roll iframe{display:block;width:min(900px,92vw);aspect-ratio:16/9;border:0;border-radius:20px;box-shadow:var(--shadow)}
+  #roll video{display:block;width:min(900px,92vw);aspect-ratio:16/9;border:0;border-radius:20px;box-shadow:var(--shadow)}
 </style>
 </head>
 <body>
@@ -75,17 +75,17 @@
   <div class="env" id="env" aria-hidden="true"><div class="flap"></div><div class="pocket"></div><span class="seal">♥</span></div>
   <button class="btn small" id="open" type="button" aria-expanded="false" aria-controls="paper">Open the letter</button>
   <article class="paper" id="paper"><div class="paper-in">
-    <p>Juhi,</p><p>Four years ago you came to meet me at Hazrat Nizamuddin, and I have been quietly grateful for that day ever since.</p>
-    <p>You make me laugh in ways nobody else can. You cuddle like it is your full-time job and you are exceptional at it. You get flustered by the smallest inconvenience and somehow it is the most adorable thing on earth.</p>
-    <p>I never really knew love until I was loved by you. You taught me what it feels like to be chosen, understood and held, on good days and chaotic ones alike.</p>
-    <p>Thank you for four years, for the patience, the laughter and for saying yes. I would choose you again in every version of this story.</p><p>Happy Anniversary.</p><p class="sign">Yours always,<br>Rishabh</p>
+    <p>Juhi,</p><p>Four years ago you came to meet me at Hazrat Nizamuddin and I have been grateful for that day ever since.</p>
+    <p>You make me laugh in ways nobody else can and you cuddle like a pro. Honestly, nothing short of a banariya clinging to a mumma/papa banar.</p>
+    <p>I never really knew love until I was loved by you. You taught me what it feels like to be chosen and also how to behave like a normal human being (I'm still learning).</p>
+    <p>Thank you for trusting me to build a future for the both of us, especially since it came at the cost of your love language. I will make it all worth it very soon.</p><p>Happy Anniversary.</p><p class="sign">Yours always,<br>Rishabh</p>
     <img class="asset sticker mini end" data-base="https://media.giphy.com/media/JGRQXuGNpqJowSB5fr/giphy" data-exts="gif" alt="Small animated bear waving goodbye">
   </div></article>
 </section>
 <section id="ending" class="ending"><p class="heart" aria-hidden="true">♥</p><h2>Happy Anniversary, Juhi</h2></section>
 </main>
 <div id="roll" role="dialog" aria-modal="true" aria-labelledby="rollcap" hidden>
-  <iframe id="song-video" title="Our song" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  <video id="song-video" src="assets/audio/OurSong.mp4" controls playsinline preload="metadata" aria-label="Our song"></video>
   <p id="rollcap">You thought it’d be that easy, Juhi?</p>
   <button class="btn" id="rollclose" type="button">Fine, take me back</button>
 </div>
