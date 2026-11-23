@@ -79,12 +79,17 @@
   document.querySelectorAll('.card').forEach(c => c.addEventListener('click', () =>
     c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') !== 'true')));
 
-  /* ---- Rickroll overlay (no audio, ever) ---- */
+  /* ---- Play embedded YouTube video on button click ---- */
   const roll = document.getElementById('roll');
   const song = document.getElementById('song');
+  const player = document.getElementById('song-video');
   const closeBtn = document.getElementById('rollclose');
-  const close = () => { roll.hidden = true; song.focus(); };
-  song.addEventListener('click', () => { roll.hidden = false; closeBtn.focus(); });
+  const close = () => { roll.hidden = true; player.src = ''; song.focus(); };
+  song.addEventListener('click', () => {
+    player.src = 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&playsinline=1';
+    roll.hidden = false;
+    closeBtn.focus();
+  });
   closeBtn.addEventListener('click', close);
   addEventListener('keydown', e => { if (e.key === 'Escape' && !roll.hidden) close(); });
 })();
