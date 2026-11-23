@@ -64,16 +64,29 @@
   const paper = document.getElementById('paper');
   const openBtn = document.getElementById('open');
   const ending = document.getElementById('ending');
-  function unfold(){ paper.classList.add('open'); openBtn.setAttribute('aria-expanded','true'); openBtn.hidden = true; }
+  const env = document.getElementById('env');
+  let opened = false;
+  function unfold(){
+    if (opened) return; opened = true;
+    openBtn.style.display = 'none';
+    openBtn.setAttribute('aria-expanded','true');
+    env.classList.add('open');
+    setTimeout(() => {
+      env.classList.add('gone');
+      paper.classList.add('open');
+      paper.setAttribute('tabindex','-1');
+      paper.focus({ preventScroll: true });
+    }, 1300);
+  }
   openBtn.addEventListener('click', unfold);
+  env.addEventListener('click', unfold);
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (!e.isIntersecting) return;
     e.target.classList.add('in');
-    if (e.target === paper) unfold();
     io.unobserve(e.target);
   }), { threshold: .25 });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
-  io.observe(paper); io.observe(ending);
+  io.observe(ending);
 
   /* ---- Flip cards ---- */
   document.querySelectorAll('.card').forEach(c => c.addEventListener('click', () =>

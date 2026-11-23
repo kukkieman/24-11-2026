@@ -93,6 +93,7 @@ main,.nav{position:relative;z-index:2}
 
 /* ===== Letter (calmer, slower) ===== */
 .calm{text-align:center}
+#letter h2{position:relative;z-index:5}
 .paper{max-width:640px;margin:2rem auto 0;text-align:left;color:#3b2a22;border-radius:6px;box-shadow:var(--shadow);background:
   repeating-linear-gradient(transparent 0 31px,rgba(201,165,138,.25) 31px 32px),var(--paper);overflow:hidden}
 .paper-in{padding:2.2rem 2.4rem}
@@ -103,6 +104,15 @@ main,.nav{position:relative;z-index:2}
 .js .paper.open{max-height:1400px}
 .js #open{display:inline-block}
 #open{display:none;margin-top:1rem}
+.js .paper:not(.open){box-shadow:none}
+.env{position:relative;width:280px;height:180px;margin:6.5rem auto 0;perspective:800px;max-height:220px;cursor:pointer;transition:opacity 1s,max-height 1.2s .9s,margin-top 1.2s .9s}
+.env::before{content:"";position:absolute;inset:0;background:#4a2e23;border-radius:8px;box-shadow:var(--shadow)}
+.pocket{position:absolute;inset:0;background:#7a5242;border-radius:8px;clip-path:polygon(0 0,50% 50%,100% 0,100% 100%,0 100%)}
+.flap{position:absolute;top:0;left:0;width:100%;height:50%;background:#6a4536;transform-origin:top;clip-path:polygon(0 0,100% 0,50% 100%);transition:transform 1.2s ease;z-index:2}
+.seal{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:var(--pink);color:var(--rose);display:grid;place-items:center;font-size:1.4rem;z-index:3;box-shadow:0 3px 8px rgba(0,0,0,.35);transition:opacity .5s}
+.env.open .flap{transform:rotateX(180deg)}
+.env.open .seal{opacity:0}
+.env.gone{opacity:0;max-height:0;margin-top:0;pointer-events:none}
 
 /* ===== Ending ===== */
 .ending{text-align:center;padding:7rem 1rem 9rem}
@@ -139,6 +149,10 @@ main,.nav{position:relative;z-index:2}
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .hearts,.sparkle{display:none}
   .js .rv{opacity:1;transform:none}
-  .js .paper{max-height:none}
   .ending h2{opacity:1}
+  /* envelope + letter only animate after a click, so keep them animated */
+  .flap{transition-duration:1.2s!important}
+  .seal{transition-duration:.5s!important}
+  .env{transition-duration:1s,1.2s,1.2s!important}
+  .js .paper{transition-duration:4s!important}
 }
