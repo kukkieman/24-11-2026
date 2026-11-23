@@ -13,183 +13,52 @@
 <body>
 <script>document.documentElement.classList.add('js');</script>
 <div class="hearts" aria-hidden="true"></div>
-
 <nav class="nav" aria-label="Sections">
-  <a href="#hero" class="brand">J &amp; R</a>
-  <a href="#story">Our story</a>
-  <a href="#reasons">Reasons</a>
-  <a href="#video">Video</a>
-  <a href="#letter">Letter</a>
+  <a href="#hero" class="brand">J &amp; R</a><a href="#story">Our story</a><a href="#reasons">Reasons</a><a href="#video">Video</a><a href="#letter">Letter</a>
 </nav>
-
 <main>
-<!-- ============ 1. HERO ============ -->
 <section id="hero" class="hero">
-  <!-- MEME: hero stickers. Drop files named cat-meme-1 and milk-mocha-1 into assets/memes/ -->
   <img class="asset sticker s1" data-base="assets/memes/cat-meme-1" alt="Cat meme sticker, reacting dramatically">
-  <img class="asset sticker s2" data-base="assets/memes/milk-mocha-1" alt="Milk and Mocha bears celebrating">
+  <img class="asset sticker s2" data-base="https://media.giphy.com/media/IzXiddo2twMmdmU8Lv/giphy" data-exts="gif" alt="Milk and Mocha bears celebrating">
   <p class="kicker">breaking news for Juhi (a.k.a. momo)</p>
-  <!-- CAPTION: edit the headline freely -->
   <h1><span>Four years.</span> <span>FOUR.</span> <span>And you’re still here??</span> <span class="pink">Brave.</span></h1>
-  <p class="hero-line">Happy 4th Anniversary</p>
-  <p class="counter"><strong id="days">0</strong> days together and counting <span aria-hidden="true">🐾</span></p>
-  <button class="btn" id="clickme" type="button">click me</button>
-  <p class="micro" id="micro" aria-live="polite">(it does nothing. probably.)</p>
+  <p class="hero-line">Happy 4th Anniversary</p><p class="counter"><strong id="days">0</strong> days together and counting <span aria-hidden="true">🐾</span></p>
+  <button class="btn" id="clickme" type="button">click me</button><p class="micro" id="micro" aria-live="polite">(it does nothing. probably.)</p>
 </section>
-
 <div class="divider" aria-hidden="true">🐾 🐾 🐾</div>
-
-<!-- ============ 2. OUR STORY ============ -->
 <section id="story" class="wrap">
-  <h2>Our story</h2>
-  <p class="sub">A very serious historical record.</p>
+  <h2>Our story</h2><p class="sub">A very serious historical record.</p>
   <ol class="timeline">
-    <li class="moment rv">
-      <!-- PHOTO 1: assets/photos/photo-1.jpg -->
-      <img class="asset photo" data-base="assets/photos/photo-1" alt="Photo placeholder for moment 1, the day Juhi came to meet Rishabh">
-      <div class="text">
-        <!-- DATE 1: replace the text below -->
-        <time>[ add date ]</time>
-        <!-- CAPTION 1 -->
-        <p>The day you came to meet me at Hazrat Nizamuddin. Station chaos everywhere and I only saw you.</p>
-        <!-- MEME 1 -->
-        <img class="asset sticker mini" data-base="assets/memes/cat-meme-2" alt="Cat meme reacting to the big moment">
-      </div>
-    </li>
-    <li class="moment rv">
-      <!-- PHOTO 2: assets/photos/photo-2.jpg -->
-      <img class="asset photo" data-base="assets/photos/photo-2" alt="Photo placeholder for moment 2">
-      <div class="text">
-        <!-- DATE 2 --><time>[ add date ]</time>
-        <!-- CAPTION 2 -->
-        <p>TODO: Rishabh, write something here. Do not make Juhi wait.</p>
-        <!-- MEME 2 --><img class="asset sticker mini" data-base="assets/memes/milk-mocha-2" alt="Milk and Mocha bear meme reaction">
-      </div>
-    </li>
-    <li class="moment rv">
-      <!-- PHOTO 3: assets/photos/photo-3.jpg -->
-      <img class="asset photo" data-base="assets/photos/photo-3" alt="Photo placeholder for moment 3">
-      <div class="text">
-        <!-- DATE 3 --><time>[ add date ]</time>
-        <!-- CAPTION 3 -->
-        <p>TODO: an embarrassing but lovable memory goes here.</p>
-        <!-- MEME 3 --><img class="asset sticker mini" data-base="assets/memes/cat-meme-3" alt="Cat meme reaction">
-      </div>
-    </li>
-    <li class="moment rv">
-      <!-- PHOTO 4: assets/photos/photo-4.jpg -->
-      <img class="asset photo" data-base="assets/photos/photo-4" alt="Photo placeholder for moment 4">
-      <div class="text">
-        <!-- DATE 4 --><time>[ add date ]</time>
-        <!-- CAPTION 4 -->
-        <p>TODO: the plot thickens. Add the moment you knew.</p>
-        <!-- MEME 4 --><img class="asset sticker mini" data-base="assets/memes/milk-mocha-3" alt="Milk and Mocha bear meme reaction">
-      </div>
-    </li>
-    <li class="moment rv">
-      <!-- PHOTO 5: assets/photos/photo-5.jpg -->
-      <img class="asset photo" data-base="assets/photos/photo-5" alt="Photo placeholder for moment 5">
-      <div class="text">
-        <!-- DATE 5 --><time>[ add date ]</time>
-        <!-- CAPTION 5 -->
-        <p>TODO: the latest chapter. Plot twist: it is still going.</p>
-        <!-- MEME 5 --><img class="asset sticker mini" data-base="assets/memes/cat-meme-4" alt="Cat meme reaction">
-      </div>
-    </li>
+    <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-1" alt="Photo placeholder for moment 1, the day Juhi came to meet Rishabh"><div class="text"><time>[ add date ]</time><p>The day you came to meet me at Hazrat Nizamuddin. Station chaos everywhere and I only saw you.</p><img class="asset sticker mini" data-base="assets/memes/cat-meme-2" alt="Cat meme reacting to the big moment"></div></li>
+    <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-2" alt="Photo placeholder for moment 2"><div class="text"><time>[ add date ]</time><p>TODO: Rishabh, write something here. Do not make Juhi wait.</p><img class="asset sticker mini" data-base="https://media.giphy.com/media/SYo1DFS8NLhhqzzjMU/giphy" data-exts="gif" alt="Milk and Mocha bear meme reaction"></div></li>
+    <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-3" alt="Photo placeholder for moment 3"><div class="text"><time>[ add date ]</time><p>TODO: an embarrassing but lovable memory goes here.</p><img class="asset sticker mini" data-base="assets/memes/cat-meme-3" alt="Cat meme reaction"></div></li>
+    <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-4" alt="Photo placeholder for moment 4"><div class="text"><time>[ add date ]</time><p>TODO: the plot thickens. Add the moment you knew.</p><img class="asset sticker mini" data-base="https://media.giphy.com/media/Zl7u48zLVFgLpRwq6f/giphy" data-exts="gif" alt="Milk and Mocha bear meme reaction"></div></li>
+    <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-5" alt="Photo placeholder for moment 5"><div class="text"><time>[ add date ]</time><p>TODO: the latest chapter. Plot twist: it is still going.</p><img class="asset sticker mini" data-base="assets/memes/cat-meme-4" alt="Cat meme reaction"></div></li>
   </ol>
 </section>
-
 <div class="divider" aria-hidden="true">🐾 🐾 🐾</div>
-
-<!-- ============ 3. REASONS ============ -->
 <section id="reasons" class="wrap">
-  <h2>Reasons I love you</h2>
-  <p class="sub">Tap a card. Science says it is fun.</p>
-  <div class="cards">
-    <!-- Each card: edit the .back text for the caption, swap the sticker file name if you like -->
-    <button class="card" type="button" aria-pressed="false">
-      <span class="face front"><img class="asset sticker mini" data-base="assets/memes/milk-mocha-4" alt="Milk and Mocha bear laughing"><b>Her humor</b></span>
-      <span class="face back">You laugh at my jokes and then top them. Rude. Also correct.</span>
-    </button>
-    <button class="card" type="button" aria-pressed="false">
-      <span class="face front"><img class="asset sticker mini" data-base="assets/memes/cat-meme-5" alt="Cat meme being cuddly"><b>Her cuddles</b></span>
-      <span class="face back">Elite level. Professional grade. I have lost every argument while being held.</span>
-    </button>
-    <button class="card" type="button" aria-pressed="false">
-      <span class="face front"><img class="asset sticker mini" data-base="assets/memes/milk-mocha-5" alt="Flustered Milk and Mocha bear"><b>Her flustered face</b></span>
-      <span class="face back">A tiny inconvenience appears and you go full alarm bell. It is the cutest thing on earth.</span>
-    </button>
-    <button class="card" type="button" aria-pressed="false">
-      <span class="face front"><img class="asset sticker mini" data-base="assets/memes/cat-meme-6" alt="Thoughtful cat meme"><b>The way she thinks</b></span>
-      <span class="face back">You see angles nobody else does. I come for the answer and stay for the reasoning.</span>
-    </button>
-    <button class="card" type="button" aria-pressed="false">
-      <span class="face front"><img class="asset sticker mini" data-base="assets/memes/milk-mocha-6" alt="Milk and Mocha bears hugging"><b>How she loves me</b></span>
-      <span class="face back">Fully, loudly and patiently. Somehow all three at once.</span>
-    </button>
-    <button class="card final" type="button" aria-pressed="false">
-      <span class="face front"><b>One more…</b></span>
-      <span class="face back">I never really knew love until I was loved by you.</span>
-    </button>
+  <h2>Reasons I love you</h2><p class="sub">Tap a card. Science says it is fun.</p><div class="cards">
+    <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="https://media.giphy.com/media/u976iIYz6khtc2RDmM/giphy" data-exts="gif" alt="Milk and Mocha bear laughing"><b>Her humor</b></span><span class="face back">You laugh at my jokes and then top them. Rude. Also correct.</span></button>
+    <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="assets/memes/cat-meme-5" alt="Cat meme being cuddly"><b>Her cuddles</b></span><span class="face back">Elite level. Professional grade. I have lost every argument while being held.</span></button>
+    <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="https://media.giphy.com/media/KztT2c4u8mYYUiMKdJ/giphy" data-exts="gif" alt="Flustered Milk and Mocha bear"><b>Her flustered face</b></span><span class="face back">A tiny inconvenience appears and you go full alarm bell. It is the cutest thing on earth.</span></button>
+    <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="assets/memes/cat-meme-6" alt="Thoughtful cat meme"><b>The way she thinks</b></span><span class="face back">You see angles nobody else does. I come for the answer and stay for the reasoning.</span></button>
+    <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="https://media.giphy.com/media/QEN54dmAJuTF0wBWXz/giphy" data-exts="gif" alt="Milk and Mocha bears hugging"><b>How she loves me</b></span><span class="face back">Fully, loudly and patiently. Somehow all three at once.</span></button>
+    <button class="card final" type="button" aria-pressed="false"><span class="face front"><b>One more…</b></span><span class="face back">I never really knew love until I was loved by you.</span></button>
+  </div>
+  <div class="gif-references" aria-label="A few more favourite reactions">
+    <img class="asset sticker mini" data-base="https://media.giphy.com/media/JGRQXuGNpqJowSB5fr/giphy" data-exts="gif" alt="Favourite animated reaction one">
+    <img class="asset sticker mini" data-base="https://media.giphy.com/media/Ck71dLMUnzsPCgm98j/giphy" data-exts="gif" alt="Favourite animated reaction two">
+    <img class="asset sticker mini" data-base="https://media.giphy.com/media/B1ozfBUkYxtGzbfGG9/giphy" data-exts="gif" alt="Favourite animated reaction three">
+    <img class="asset sticker mini" data-base="https://media.giphy.com/media/iY25xIloX4bkwhcJJG/giphy" data-exts="gif" alt="Favourite animated reaction four">
   </div>
 </section>
-
 <div class="divider" aria-hidden="true">🐾 🐾 🐾</div>
-
-<!-- ============ 4. VIDEO ============ -->
-<section id="video" class="wrap">
-  <h2>How it all led to the question</h2>
-  <p class="sub">Now showing: a very important film.</p>
-  <figure class="cinema">
-    <div class="screen">
-      <!-- VIDEO: put proposal.mp4 in assets/video/. POSTER: put video-poster.jpg in assets/photos/ -->
-      <video controls preload="none" poster="assets/photos/video-poster.jpg" aria-label="Proposal story video">
-        <source src="assets/video/proposal.mp4" type="video/mp4">
-        Your browser does not support video. The file lives at assets/video/proposal.mp4.
-      </video>
-    </div>
-    <figcaption>
-      <!-- RICKROLL TRIGGER: fake "play our song" button -->
-      <button class="btn small" id="song" type="button">♪ Play our song</button>
-    </figcaption>
-  </figure>
-</section>
-
-<!-- ============ 5. LOVE LETTER ============ -->
-<section id="letter" class="wrap calm">
-  <h2>A letter</h2>
-  <button class="btn small" id="open" type="button" aria-expanded="false" aria-controls="paper">Open the letter</button>
-  <!-- LETTER: edit the text below whenever you like -->
-  <article class="paper" id="paper">
-    <div class="paper-in">
-      <p>Juhi,</p>
-      <p>Four years ago you came to meet me at Hazrat Nizamuddin, and I have been quietly grateful for that day ever since.</p>
-      <p>You make me laugh in ways nobody else can. You cuddle like it is your full-time job and you are exceptional at it. You get flustered by the smallest inconvenience and somehow it is the most endearing thing I have ever seen. You think about the world in your own way and I love how it makes me see things differently.</p>
-      <p>I never really knew love until I was loved by you. You taught me what it feels like to be chosen, understood and held, on good days and chaotic ones alike.</p>
-      <p>Thank you for four years, for the patience, the laughter and for saying yes. I would choose you again in every version of this story.</p>
-      <p>Happy Anniversary.</p>
-      <p class="sign">Yours always,<br>Rishabh</p>
-      <!-- MEME: the one bear sticker allowed in the letter -->
-      <img class="asset sticker mini end" data-base="assets/memes/milk-mocha-7" alt="Small Milk and Mocha bear waving goodbye">
-    </div>
-  </article>
-</section>
-
-<!-- ============ 6. ENDING ============ -->
-<section id="ending" class="ending">
-  <p class="heart" aria-hidden="true">♥</p>
-  <h2>Happy Anniversary, Juhi</h2>
-</section>
+<section id="video" class="wrap"><h2>How it all led to the question</h2><p class="sub">Now showing: a very important film.</p><figure class="cinema"><div class="screen"><video controls preload="none" poster="assets/photos/video-poster.jpg" aria-label="Proposal story video"><source src="assets/video/proposal.mp4" type="video/mp4">Your browser does not support video. The file lives at assets/video/proposal.mp4.</video></div><figcaption><button class="btn small" id="song" type="button">♪ Play our song</button></figcaption></figure></section>
+<section id="letter" class="wrap calm"><h2>A letter</h2><button class="btn small" id="open" type="button" aria-expanded="false" aria-controls="paper">Open the letter</button><article class="paper" id="paper"><div class="paper-in"><p>Juhi,</p><p>Four years ago you came to meet me at Hazrat Nizamuddin, and I have been quietly grateful for that day ever since.</p><p>You make me laugh in ways nobody else can. You cuddle like it is your full-time job and you are exceptional at it. You get flustered by the smallest inconvenience and somehow it is the most adorable thing on earth.</p><p>I never really knew love until I was loved by you. You taught me what it feels like to be chosen, understood and held, on good days and chaotic ones alike.</p><p>Thank you for four years, for the patience, the laughter and for saying yes. I would choose you again in every version of this story.</p><p>Happy Anniversary.</p><p class="sign">Yours always,<br>Rishabh</p><img class="asset sticker mini end" data-base="https://media.giphy.com/media/JGRQXuGNpqJowSB5fr/giphy" data-exts="gif" alt="Small animated bear waving goodbye"></div></article></section>
+<section id="ending" class="ending"><p class="heart" aria-hidden="true">♥</p><h2>Happy Anniversary, Juhi</h2></section>
 </main>
-
-<!-- ============ RICKROLL OVERLAY ============ -->
-<div id="roll" role="dialog" aria-modal="true" aria-labelledby="rollcap" hidden>
-  <!-- GIF: put rickroll.gif in assets/ -->
-  <img class="asset" data-base="assets/rickroll" data-exts="gif,webp,png,jpg" alt="Rickroll gif placeholder">
-  <p id="rollcap">You thought it’d be that easy, Juhi?</p>
-  <button class="btn" id="rollclose" type="button">Fine, take me back</button>
-</div>
-
+<div id="roll" role="dialog" aria-modal="true" aria-labelledby="rollcap" hidden><img class="asset" data-base="assets/rickroll" data-exts="gif,webp,png,jpg" alt="Rickroll gif placeholder"><p id="rollcap">You thought it’d be that easy, Juhi?</p><button class="btn" id="rollclose" type="button">Fine, take me back</button></div>
 <script src="script.js"></script>
 </body>
 </html>
