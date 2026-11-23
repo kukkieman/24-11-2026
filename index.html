@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  .gif-references{display:flex;justify-content:center;align-items:center;gap:0;padding:0;margin:0 auto;width:100%}
-  .gif-references img{flex:1 1 0;width:33.333%;max-width:none;height:clamp(130px,24vw,220px);object-fit:contain;filter:none}
+  .gif-references{display:flex;justify-content:center;align-items:center;gap:0;padding:0;margin:1.5rem auto 0;width:min(600px,100%)}
+  .gif-references img.sticker.mini{flex:1 1 0;width:33.333%;max-width:33.333%;height:clamp(110px,22vw,180px);margin:0;object-fit:contain;filter:none}
   #roll iframe{display:block;width:min(900px,92vw);aspect-ratio:16/9;border:0;border-radius:20px;box-shadow:var(--shadow)}
 </style>
 </head>
@@ -32,14 +32,13 @@
   <p class="kicker">breaking news for Juhi (a.k.a. momo)</p>
   <h1><span>Four years.</span> <span>FOUR.</span> <span>And you’re still here??</span> <span class="pink">Brave.</span></h1>
   <p class="hero-line">Happy 4th Anniversary</p>
-  <p class="counter"><strong id="days">0</strong> days together and counting <span aria-hidden="true"></span>😘</p>
+  <p class="counter"><strong id="days">0</strong> days together and counting <span aria-hidden="true">♡</span></p>
   <button class="btn" id="clickme" type="button">click me</button>
   <p class="micro" id="micro" aria-live="polite">(it does nothing. probably.)</p>
 </section>
-
+<div class="divider" aria-hidden="true">♥ ♥ ♥</div>
 <section id="story" class="wrap">
-  <h2>Our story</h2>
-  <p class="sub">A very serious historical record.</p>
+  <h2>Our story</h2><p class="sub">A very serious historical record.</p>
   <ol class="timeline">
     <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-1" alt="Photo placeholder for moment 1, the day Juhi came to meet Rishabh"><div class="text"><time>[ add date ]</time><p>The day you came to meet me at Hazrat Nizamuddin. Station chaos everywhere and I only saw you.</p><img class="asset sticker mini" data-base="assets/memes/cat-meme-2" alt="Cat meme reacting to the big moment"></div></li>
     <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-2" alt="Photo placeholder for moment 2"><div class="text"><time>[ add date ]</time><p>TODO: Rishabh, write something here. Do not make Juhi wait.</p><img class="asset sticker mini" data-base="https://media.giphy.com/media/SYo1DFS8NLhhqzzjMU/giphy" data-exts="gif" alt="Milk and Mocha bear meme reaction"></div></li>
@@ -48,10 +47,9 @@
     <li class="moment rv"><img class="asset photo" data-base="assets/photos/photo-5" alt="Photo placeholder for moment 5"><div class="text"><time>[ add date ]</time><p>TODO: the latest chapter. Plot twist: it is still going.</p><img class="asset sticker mini" data-base="assets/memes/cat-meme-4" alt="Cat meme reaction"></div></li>
   </ol>
 </section>
-
+<div class="divider" aria-hidden="true">♥ ♥ ♥</div>
 <section id="reasons" class="wrap">
-  <h2>Reasons I love you</h2>
-  <p class="sub">Tap a card. Science says it is fun.</p>
+  <h2>Reasons I love you</h2><p class="sub">Tap a card. Science says it is fun.</p>
   <div class="cards">
     <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="https://media.giphy.com/media/u976iIYz6khtc2RDmM/giphy" data-exts="gif" alt="Milk and Mocha bear laughing"><b>Her humor</b></span><span class="face back">You laugh at my jokes and then top them. Rude. Also correct.</span></button>
     <button class="card" type="button" aria-pressed="false"><span class="face front"><img class="asset sticker mini" data-base="assets/memes/cat-meme-5" alt="Cat meme being cuddly"><b>Her cuddles</b></span><span class="face back">Elite level. Professional grade. I have lost every argument while being held.</span></button>
@@ -66,30 +64,25 @@
     <img class="asset sticker mini" data-base="https://media.giphy.com/media/iY25xIloX4bkwhcJJG/giphy" data-exts="gif" alt="Favourite animated reaction three">
   </div>
 </section>
-
+<div class="divider" aria-hidden="true">♥ ♥ ♥</div>
 <section id="video" class="wrap">
-  <h2>How it all led to the question</h2>
-  <p class="sub">Now showing: a very important film.</p>
+  <h2>How it all led to the question</h2><p class="sub">Now showing: a very important film.</p>
   <figure class="cinema"><div class="screen"><video controls preload="none" poster="assets/photos/video-poster.jpg" aria-label="Proposal story video"><source src="assets/video/proposal.mp4" type="video/mp4">Your browser does not support video. The file lives at assets/video/proposal.mp4.</video></div><figcaption><button class="btn small" id="song" type="button">♪ Play our song</button></figcaption></figure>
 </section>
 <section id="letter" class="wrap calm">
-  <h2>A letter</h2>
-  <button class="btn small" id="open" type="button" aria-expanded="false" aria-controls="paper">Open the letter</button>
+  <h2>A letter</h2><button class="btn small" id="open" type="button" aria-expanded="false" aria-controls="paper">Open the letter</button>
   <article class="paper" id="paper"><div class="paper-in">
-    <p>Juhi,</p>
-    <p>Four years ago you came to meet me at Hazrat Nizamuddin, and I have been quietly grateful for that day ever since.</p>
+    <p>Juhi,</p><p>Four years ago you came to meet me at Hazrat Nizamuddin, and I have been quietly grateful for that day ever since.</p>
     <p>You make me laugh in ways nobody else can. You cuddle like it is your full-time job and you are exceptional at it. You get flustered by the smallest inconvenience and somehow it is the most adorable thing on earth.</p>
     <p>I never really knew love until I was loved by you. You taught me what it feels like to be chosen, understood and held, on good days and chaotic ones alike.</p>
-    <p>Thank you for four years, for the patience, the laughter and for saying yes. I would choose you again in every version of this story.</p>
-    <p>Happy Anniversary.</p>
-    <p class="sign">Yours always,<br>Rishabh</p>
+    <p>Thank you for four years, for the patience, the laughter and for saying yes. I would choose you again in every version of this story.</p><p>Happy Anniversary.</p><p class="sign">Yours always,<br>Rishabh</p>
     <img class="asset sticker mini end" data-base="https://media.giphy.com/media/JGRQXuGNpqJowSB5fr/giphy" data-exts="gif" alt="Small animated bear waving goodbye">
   </div></article>
 </section>
 <section id="ending" class="ending"><p class="heart" aria-hidden="true">♥</p><h2>Happy Anniversary, Juhi</h2></section>
 </main>
 <div id="roll" role="dialog" aria-modal="true" aria-labelledby="rollcap" hidden>
-  <iframe id="song-video" title="Our song" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  <iframe id="song-video" title="Our song" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
   <p id="rollcap">You thought it’d be that easy, Juhi?</p>
   <button class="btn" id="rollclose" type="button">Fine, take me back</button>
 </div>

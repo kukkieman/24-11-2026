@@ -38,7 +38,7 @@
   const hearts = document.querySelector('.hearts');
   if (!reduce) for (let k = 0; k < 14; k++) {
     const h = document.createElement('i');
-    h.textContent = k % 3 ? '♥' : '🐾';
+    h.textContent = '♥';
     h.style.left = Math.random() * 100 + '%';
     h.style.fontSize = 14 + Math.random() * 22 + 'px';
     h.style.animationDuration = 14 + Math.random() * 16 + 's';
@@ -79,14 +79,14 @@
   document.querySelectorAll('.card').forEach(c => c.addEventListener('click', () =>
     c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') !== 'true')));
 
-  /* ---- Play embedded YouTube video on button click ---- */
+  /* ---- YouTube overlay, loaded on click for autoplay ---- */
   const roll = document.getElementById('roll');
   const song = document.getElementById('song');
   const player = document.getElementById('song-video');
   const closeBtn = document.getElementById('rollclose');
-  const close = () => { roll.hidden = true; player.src = ''; song.focus(); };
+  const close = () => { roll.hidden = true; player.removeAttribute('src'); song.focus(); };
   song.addEventListener('click', () => {
-    player.src = 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&playsinline=1';
+    player.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&playsinline=1&rel=0&origin=' + encodeURIComponent(location.origin);
     roll.hidden = false;
     closeBtn.focus();
   });
