@@ -156,3 +156,8 @@ main,.nav{position:relative;z-index:2}
   .env{transition-duration:1s,1.2s,1.2s!important}
   .js .paper{transition-duration:4s!important}
 }
+
+.cinema.slim{max-width:420px;padding:1.6rem}
+.cinema.slim figcaption{display:flex;flex-direction:column;align-items:center;gap:.9rem;padding:0}
+.ssd{display:inline-block;text-decoration:none}
+.ssd[hidden]{display:none}

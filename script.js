@@ -97,7 +97,7 @@
   const song = document.getElementById('song');
   const player = document.getElementById('song-video');
   const closeBtn = document.getElementById('rollclose');
-  const close = () => { player.pause(); player.currentTime = 0; roll.hidden = true; song.focus(); };
+  const close = () => { player.pause(); player.currentTime = 0; roll.hidden = true; document.getElementById('ssd').hidden = false; song.focus(); };
   song.addEventListener('click', () => {
     roll.hidden = false;
     closeBtn.focus();
